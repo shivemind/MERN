@@ -7,6 +7,7 @@ const Form = (props) =>{
         setInputs({ 
             ...inputs,
             [e.target.name]: e.target.value
+            
 
         });
     };

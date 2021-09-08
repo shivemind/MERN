@@ -1,6 +1,8 @@
 import React, {useState} from 'react';
 import Form from './components/Form';
 import Results from './components/Results';
+import UserForm from './components/UserForm';
+import Handle from './components/Handle';
 import logo from './logo.svg';
 import './App.css';
 
@@ -16,8 +18,13 @@ function App() {
 
   return (
     <div className="App">
-      <Form inputs={state} setInputs={setState} />
+      {/* <Form inputs={state} setInputs={setState} /> */}
       <Results data={state} />
+      {/* <UserForm inputs={state} setInputs={setState} />
+      <Handle inputs={state} setInputs={setState} /> */}
+
+
+
     </div>
   );
 }
