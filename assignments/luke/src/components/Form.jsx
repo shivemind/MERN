@@ -26,8 +26,8 @@ const Form = () => {
                     Category: 
                     <select name="category" id="" onChange={e => setCategory(e.target.value)}>
                         <option value="">Select Category</option>
-                        <option value="pokemon">Pokemon</option>
-                        <option value="type">Type</option>
+                        <option value="people">People</option>
+                        <option value="planets">Planets</option>
                     </select>
                     <input type="number" name='id' id='' onChange={e => setId(e.target.value)} />
                     <button>Get Info</button>
