@@ -10,7 +10,7 @@ export default () => {
         //prevent default behavior of the submit
         e.preventDefault();
         //make a post request to create a new person
-        axios.post('http://localhost:8007/api/product', {
+        axios.post('http://localhost:8011/api/product', {
             title,
             price,
             description
