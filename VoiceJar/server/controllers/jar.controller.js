@@ -6,11 +6,12 @@ module.exports.index = (request, response) => {
 }
     // The method below is new
 module.exports.createJar = (request, response) => {
-    const { story, voice, visual } = request.body;
+    const { story, voice, visual, background } = request.body;
     Jar.create({
         story,
         voice,
-        visual
+        visual,
+        background
         
     })
         .then(jar => response.json(jar))
