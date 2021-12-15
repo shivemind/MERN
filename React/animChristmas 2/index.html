@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>animChristmas SVG Animation DEMO</title>
+  <style>
+    html,
+    body {
+      background-color: white;
+      margin: 0px;
+      height: 100%;
+      overflow-x: hidden;
+      overflow-y: auto;
+    }
+    #animChristmas {
+      width: 100%;
+      height: 100%;
+      display: block;
+      overflow: hidden;
+      transform: translate3d(0, 0, 0);
+      text-align: center;
+      margin: 0 auto;
+    }
+  </style>
+  <!-- build:js bodymovin.js Put this script to your web page. Don`t forget change Path to files, uploaded to your Hosting-->
+  <script src="js/lottie.min.js"></script>
+</head>
+<body>
+  <!--Put this DIV to body in your web page-->
+    <div id="animChristmas"></div>
+  <!--Put this script to your web page. Don`t forget change Path to Uploaded files on your Hosting-->
+
+    <script>
+  var anim;
+  var animData = {
+    container: document.getElementById('animChristmas'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    rendererSettings: {
+      progressiveLoad: false,
+    },
+    path: 'animChristmas.json'
+  };
+  anim = bodymovin.loadAnimation(animData);
+  anim.setSpeed(1);
+</script>
+</body>
+</html>
